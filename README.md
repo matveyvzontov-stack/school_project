@@ -66,15 +66,21 @@ curl http://127.0.0.1:8000/
 ```
 **Expected Response:**
 ```json
-{"message": "hello, world"}
+{
+  "message": "hello, world",
+  "info": "Welcome to the modular FastAPI template!"
+}
 ```
 
-### 2. Healthcheck Endpoint (`GET /healthcheck`)
+### 2. Healthcheck Endpoint (`GET /api/v1/healthcheck`)
 Returns a successful health status.
 ```powershell
-curl http://127.0.0.1:8000/healthcheck
+curl http://127.0.0.1:8000/api/v1/healthcheck
 ```
 **Expected Response:**
 ```json
-{"status": "ok", "message": "successful health status"}
+{
+  "status": "ok",
+  "message": "successful health status"
+}
 ```
