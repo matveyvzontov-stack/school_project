@@ -12,3 +12,6 @@ ENV/
 .idea/
 *.tmp
 *.log
+*.db
+postman/
+.postman/

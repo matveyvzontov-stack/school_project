@@ -2,6 +2,10 @@ from fastapi import FastAPI
 from app.api.v1.api import api_router
 from app.api.v1.endpoints import home
 from app.core.config import settings
+from app.database import Base, engine
+
+# Create Database Tables on startup (SQLite initializer)
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title=settings.PROJECT_NAME)
 
