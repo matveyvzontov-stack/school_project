@@ -12,3 +12,4 @@ ENV/
 .idea/
 *.tmp
 *.log
+*.db
